@@ -4,6 +4,22 @@
     <meta charset="UTF-8">
     <title>Rostom Ghazli - Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
+}
+
+.animate-scroll {
+    display: flex;
+    width: max-content;
+       animation: scroll 20s linear infinite;
+}
+</style>
 </head>
 
 <body class="bg-white text-gray-800 font-sans">
@@ -87,29 +103,77 @@
     </p>
 </section>
 
-<section class="py-12 bg-gray-50 overflow-hidden">
-    <h2 class="text-center text-2xl font-bold mb-8">Compétences techniques</h2>
 
-    <div class="relative w-full overflow-hidden">
-        <div id="carousel" class="flex gap-6 transition-transform duration-500">
+<section id="parcours" class="py-16 bg-white">
+    <h2 class="text-2xl font-bold text-center mb-10">Mon parcours scolaire</h2>
 
-            <!-- ITEMS -->
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">HTML / CSS / JS</div>
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">WordPress</div>
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">PHP</div>
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">SQL / SQLite</div>
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">Python / C#</div>
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">GitHub</div>
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">POO</div>
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">Réseaux</div>
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">XAML</div>
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">UML / Modélisation</div>
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">VueJS</div>
-            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">API / Postman</div>
+    <div class="relative max-w-4xl mx-auto">
 
+        <!-- ligne verticale -->
+        <div class="absolute left-1/2 transform -translate-x-1/2 w-1 bg-blue-600 h-full"></div>
+
+        <!-- ITEM 1 (PERSONNALISABLE) -->
+        <div class="mb-10 flex justify-between items-center w-full">
+            <div class="w-1/2 pr-8 text-right">
+                <h3 class="font-bold">Brevet des collèges</h3>
+                <p class="text-gray-600">Mention : Bien</p>
+                <p class="text-gray-500">Collège François Ponsard</p>
+                <p class="text-gray-400">2017-2021</p>
+            </div>
+            <div class="w-10 h-10 bg-blue-600 rounded-full z-10"></div>
+            <div class="w-1/2"></div>
         </div>
+
+        <!-- ITEM 2 (BREVET) -->
+        <div class="mb-10 flex justify-between items-center w-full">
+            <div class="w-1/2"></div>
+            <div class="w-10 h-10 bg-blue-600 rounded-full z-10"></div>
+            <div class="w-1/2 pl-8 text-left">
+                <h3 class="font-bold">Baccalauréat général</h3>
+                <p class="text-gray-500">Lycée Ella Fitzgerald</p>
+                <p class="text-gray-400">2021-2022</p>
+            </div>
+        </div>
+
+        <!-- ITEM 3 (LYCÉE) -->
+        <div class="mb-10 flex justify-between items-center w-full">
+            <div class="w-1/2 pr-8 text-right">
+                <h3 class="font-bold">Baccalauréat technologique STI2D</h3>
+                <p class="text-gray-600">Mention : Sans Mention</p>
+                <p class="text-gray-500">Lycée Général Technologique et Professionnel Galilée</p>
+                <p class="text-gray-400">2022-2024</p>
+            </div>
+            <div class="w-10 h-10 bg-blue-600 rounded-full z-10"></div>
+            <div class="w-1/2"></div>
+        </div>
+
+        <!-- ITEM 4 (BTS) -->
+        <div class="mb-10 flex justify-between items-center w-full">
+            <div class="w-1/2"></div>
+            <div class="w-10 h-10 bg-blue-600 rounded-full z-10"></div>
+            <div class="w-1/2 pl-8 text-left">
+                <h3 class="font-bold">BTS SIO</h3>
+                <p class="text-gray-600">Option : SLAM </p>
+                <p class="text-gray-500">Lycée Ella Fitzgerald</p>
+                <p class="text-gray-400">2024-2026</p>
+            </div>
+        </div>
+
+        <!-- ITEM 5 (OBJECTIF) -->
+        <div class="mb-10 flex justify-between items-center w-full">
+            <div class="w-1/2 pr-8 text-right">
+                <h3 class="font-bold">Objectif</h3>
+                <p class="text-gray-600">Poursuite d’études / Alternance</p>
+                <p class="text-gray-500">Licence DevOps</p>
+                <p class="text-gray-400">Futur</p>
+            </div>
+            <div class="w-10 h-10 bg-blue-600 rounded-full z-10"></div>
+            <div class="w-1/2"></div>
+        </div>
+
     </div>
 </section>
+
 
 <!-- PROJECTS -->
 <section id="projects" class="p-10 bg-gray-50">
@@ -129,7 +193,29 @@
         </div>
 
         <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
-            <h3 class="font-bold text-lg">Projet PHP</h3>
+            <h3 class="font-bold text-lg">Projet Scrabble</h3>
+            <p class="text-gray-600 mt-2">
+                Développement d’un site dynamique avec PHP.
+            </p>
+            <button onclick="openModal('modalProjet2')"
+                class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Voir plus
+            </button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="font-bold text-lg">Projet Multiburo</h3>
+            <p class="text-gray-600 mt-2">
+                Développement d’un site dynamique avec PHP.
+            </p>
+            <button onclick="openModal('modalProjet2')"
+                class="mt-4 bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">
+                Voir plus
+            </button>
+        </div>
+
+        <div class="bg-white p-6 rounded-xl shadow hover:shadow-lg transition">
+            <h3 class="font-bold text-lg">Projet Gourmetise</h3>
             <p class="text-gray-600 mt-2">
                 Développement d’un site dynamique avec PHP.
             </p>
@@ -171,6 +257,77 @@
         </div>
 
     </div>
+
+<section class="py-12 bg-gray-50 overflow-hidden">
+    <h2 class="text-center text-2xl font-bold mb-8">Compétences techniques</h2>
+
+    <div class="relative w-full overflow-hidden">
+        <div id="carousel" class="flex gap-6 transition-transform duration-500">
+
+            <!-- ITEMS -->
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">HTML / CSS / JS</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">WordPress</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">PHP</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">SQL / SQLite</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">Python / C#</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">GitHub</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">POO</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">Réseaux</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">XAML</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">UML / Modélisation</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">VueJS</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">API / Postman</div>
+            
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">HTML / CSS / JS</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">WordPress</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">PHP</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">SQL / SQLite</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">Python / C#</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">GitHub</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">POO</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">Réseaux</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">XAML</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">UML / Modélisation</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">VueJS</div>
+            <div class="min-w-[200px] bg-white p-4 rounded-xl shadow text-center">API / Postman</div>
+
+        </div>
+    </div>
+</section>
+<section class="py-12 bg-gray-50 overflow-hidden">
+    <h2 class="text-center text-2xl font-bold mb-8">Technologies utilisées</h2>
+
+    <div class="relative w-full overflow-hidden">
+        <div class="animate-scroll flex gap-10 items-center">
+
+            <!-- LOGOS -->
+            <img src="images/html.png" class="h-12 hover:scale-110 transition">
+            <img src="images/css.png" class="h-12 hover:scale-110 transition">
+            <img src="images/js.png" class="h-12 hover:scale-110 transition">
+            <img src="images/php.png" class="h-12 hover:scale-110 transition">
+            <img src="images/sql.png" class="h-12 hover:scale-110 transition">
+            <img src="images/python.png" class="h-12 hover:scale-110 transition">
+            <img src="images/csharp.png" class="h-12 hover:scale-110 transition">
+            <img src="images/github.png" class="h-12 hover:scale-110 transition">
+            <img src="images/vue.png" class="h-12 hover:scale-110 transition">
+            <img src="images/postman.png" class="h-12 hover:scale-110 transition">
+
+            <!-- DUPLICATION (IMPORTANT pour boucle infinie) -->
+            <img src="images/html.png" class="h-12">
+            <img src="images/css.png" class="h-12">
+            <img src="images/js.png" class="h-12">
+            <img src="images/php.png" class="h-12">
+            <img src="images/sql.png" class="h-12">
+            <img src="images/python.png" class="h-12">
+            <img src="images/csharp.png" class="h-12">
+            <img src="images/github.png" class="h-12">
+            <img src="images/vue.png" class="h-12">
+            <img src="images/postman.png" class="h-12">
+
+        </div>
+    </div>
+</section>
+
 
 <!-- CONTACT -->
 <section id="contact" class="p-10 bg-gray-50 text-center">
