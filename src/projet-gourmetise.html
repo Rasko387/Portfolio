@@ -46,7 +46,7 @@
                         Voir les captures
                     </a>
 
-                    <a href="#"
+                    <a href="https://github.com/ElwanBurlat/Gourmetise2025"
                        class="border border-gray-300 px-6 py-3 rounded-xl hover:bg-gray-50 transition text-center font-medium">
                         GitHub
                     </a>
@@ -57,7 +57,7 @@
            <div>
                 <div class="bg-gray-100 rounded-3xl shadow-sm border border-gray-200 p-4">
                     <div class="rounded-2xl overflow-hidden">
-                        <img src="../image/ton-image.png"
+                        <img src="../image/favicon.png"
                         alt="Image principale du projet"
                         class="w-full h-[320px] object-cover">
                     </div>
@@ -102,7 +102,14 @@
             <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm">
                 <h3 class="text-2xl font-bold mb-4">Objectif du projet</h3>
                 <p class="text-gray-600 leading-relaxed">
-                    
+                    Gourmetise est un projet scolaire visant à concevoir une application web et mobile
+                    permettant l’organisation et la gestion de concours de boulangerie.
+
+                    L’application web permet aux boulangeries de s’inscrire afin de participer aux concours,
+                    tandis que l’application mobile permet aux juges d’évaluer les établissements selon plusieurs critères.
+
+                    L’objectif est de centraliser les inscriptions, de collecter les notes
+                    et d’établir un classement final des meilleures boulangeries.
                 </p>
             </div>
         </div>
@@ -116,30 +123,34 @@
             <div class="grid md:grid-cols-2 xl:grid-cols-4 gap-6">
 
                 <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-                    <h4 class="font-bold text-lg mb-3">Fonctionnalité 1</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        .
+                    <h4 class="font-bold text-lg mb-3">Inscription des boulangeries</h4>
+                    <p class="text-gray-600 text-sm">
+                        Interface web permettant aux boulangeries de s’inscrire
+                        et d’être ajoutées au système.
                     </p>
                 </div>
 
                 <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-                    <h4 class="font-bold text-lg mb-3">Fonctionnalité 2</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        
+                    <h4 class="font-bold text-lg mb-3">Import des données</h4>
+                    <p class="text-gray-600 text-sm">
+                        Synchronisation des boulangeries inscrites vers l’application mobile
+                        via une API.
                     </p>
                 </div>
 
                 <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-                    <h4 class="font-bold text-lg mb-3">Fonctionnalité 3</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                       
+                    <h4 class="font-bold text-lg mb-3">Évaluation des boulangeries</h4>
+                    <p class="text-gray-600 text-sm">
+                        Les juges peuvent attribuer des notes selon différents critères
+                        directement depuis l’application mobile.
                     </p>
                 </div>
 
                 <div class="bg-white rounded-2xl p-6 border border-gray-200 shadow-sm">
-                    <h4 class="font-bold text-lg mb-3">Fonctionnalité 4</h4>
-                    <p class="text-gray-600 text-sm leading-relaxed">
-                        
+                    <h4 class="font-bold text-lg mb-3">Classement final</h4>
+                    <p class="text-gray-600 text-sm">
+                        Récupération des notes via l’API afin d’établir un classement
+                        des meilleures boulangeries.
                     </p>
                 </div>
 
@@ -154,22 +165,24 @@
             <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm">
                 <h3 class="text-2xl font-bold mb-6">Technologies utilisées</h3>
                 <ul class="space-y-3 text-gray-700">
-                    <li>• HTML</li>
-                    <li>• CSS</li>
-                    <li>• PHP</li>
+                    <li>• VueJS</li>
+                    <li>• JavaScript</li>
                     <li>• SQL</li>
-                    <li>• Laragon</li>
+                    <li>• SQLite</li>
+                    <li>• Kotlin</li>
+                    <li>• API</li>
+                    <li>• Git</li>
                 </ul>
             </div>
 
             <div class="bg-white border border-gray-200 rounded-3xl p-8 shadow-sm">
                 <h3 class="text-2xl font-bold mb-6">Compétences mobilisées</h3>
                 <ul class="space-y-3 text-gray-700">
-                    <li>• Analyse du besoin</li>
-                    <li>• Conception d’interface</li>
-                    <li>• Développement web</li>
-                    <li>• Structuration des données</li>
-                    <li>• Tests et amélioration</li>
+                    <li>• Développement front-end avec Vue.js</li>
+                    <li>• Développement mobile avec Kotlin (Android)</li>
+                    <li>• Utilisation d’Android Studio</li>
+                    <li>• Mise en place et utilisation d’une API REST</li>
+                    <li>• Communication entre application web et mobile</li>
                 </ul>
             </div>
 
@@ -188,25 +201,30 @@
 
             <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-6">
 
-                <div class="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm">
-                    <div class="bg-gray-200 rounded-xl h-56 flex items-center justify-center text-gray-500">
-                        Capture 1
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 shadow-sm text-center">
+    
+                    <div class="flex justify-center">
+                        <img src="../image/gourmetise-interface.png"
+                            alt="Gourmetise"
+                            class="h-[500px] object-contain rounded-xl shadow">
                     </div>
-                    <p class="text-sm text-gray-500 mt-3">Accueil ou interface principale</p>
+
+                    <p class="text-sm text-gray-500 mt-4">Interface mobile</p>
+
                 </div>
 
                 <div class="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm">
                     <div class="bg-gray-200 rounded-xl h-56 flex items-center justify-center text-gray-500">
-                        Capture 2
+                        <img src="../image/gourmetise-archi.png" alt="Gourmetise" class="w-full h-40 object-cover">
                     </div>
-                    <p class="text-sm text-gray-500 mt-3">Fonctionnalité importante</p>
+                    <p class="text-sm text-gray-500 mt-3">Schéma d'architecture</p>
                 </div>
 
                 <div class="bg-white border border-gray-200 rounded-2xl p-4 shadow-sm">
                     <div class="bg-gray-200 rounded-xl h-56 flex items-center justify-center text-gray-500">
-                        Capture 3
+                        <img src="../image/gourmetise-diagramme.png" alt="Gourmetise" class="w-full h-40 object-cover">
                     </div>
-                    <p class="text-sm text-gray-500 mt-3">Autre écran ou détail technique</p>
+                    <p class="text-sm text-gray-500 mt-3">Diagramme de classe application web</p>
                 </div>
 
             </div>
@@ -218,8 +236,19 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="bg-blue-50 border border-blue-100 rounded-3xl p-8">
                 <h3 class="text-2xl font-bold mb-4">Bilan du projet</h3>
-                <p class="text-gray-700 leading-relaxed">
-                    
+                <p class="text-gray-600 leading-relaxed">
+                    Ce projet m’a permis de travailler sur une architecture complète combinant
+                    une application web et une application mobile.
+
+                    J’ai notamment développé mes compétences en Vue.js ainsi qu’en développement mobile avec Kotlin,
+                    tout en découvrant le fonctionnement des API et les échanges de données entre plusieurs plateformes.
+
+                    La mise en place de l’API a représenté une difficulté importante au début,
+                    mais m’a permis de mieux comprendre les communications entre applications
+                    et d’améliorer mon organisation dans un projet en équipe.
+
+                    Ce projet a été une expérience très enrichissante, tant sur le plan technique
+                    que sur le travail collaboratif.
                 </p>
             </div>
         </div>
